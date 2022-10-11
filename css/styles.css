@@ -1,0 +1,156 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --negro: #000000;
+    --gris: #aba8a8;
+    --blanco: #ffffff;
+    --azul: #021f75;
+}
+
+/* GLOBALES */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--blanco);
+    font-family: var(--fuenteParrafos);
+}
+
+img {
+    width: 100%;
+    height: 40rem;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 145rem;
+}
+
+.centrar-texto {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--negro);
+}
+
+/* HEADER */
+.header {
+    background-color: var(--azul);
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header .navegacion {
+    padding-bottom: 1rem;
+}
+
+/* IMAGENES */
+@media (min-width: 768px) {
+    .imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }        
+}
+
+/* NAVEGACION */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.barra a {
+    text-decoration: none;
+    color: var(--blanco);
+    margin: 0 1rem;
+}
+
+.navegacion {
+    font-size: 2rem;
+}
+
+/* TARIFAS */
+.contenido-tarifas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 2rem 10rem;
+}
+
+
+.contenedor-tarifa {
+    text-align: center;
+    width: 30rem;
+    background-color: var(--gris);
+    border-radius: 3rem;
+    margin: 2rem;
+}
+
+.contenedor-tarifa h3 {
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--azul);
+    padding: 0 0 1rem 1rem;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer .navegacion {
+    padding-bottom: 13rem;
+}
+
+.footer p {
+    color: var(--blanco);
+    margin: 0;
+}
+
+.imagen-footer {
+    width: 50%;
+    margin-left: 5rem;
+}
+
+/* TABLA HORARIOS */
+td {
+    border: 1px solid black;
+}
+
+.tabla {
+    background-color: var(--gris);
+    font-family: var(--fuenteParrafos);
+    margin: 2rem auto;
+    height: auto;
+}
