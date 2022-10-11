@@ -50,6 +50,10 @@ h4 {
     font-size: 2.8rem;
 }
 
+h5 {
+    font-size: 2rem;
+}
+
 .contenedor {
     width: 100%;
     max-width: 145rem;
@@ -85,8 +89,8 @@ h4 {
 /* NAVEGACION */
 .barra {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
 .barra a {
@@ -95,28 +99,54 @@ h4 {
     margin: 0 1rem;
 }
 
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: var(--blanco);
+        margin: 0 1rem;
+    }
+}
+
 .navegacion {
     font-size: 2rem;
 }
 
 /* TARIFAS */
 .contenido-tarifas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 0 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+@media (min-width: 768px) {
+    .contenido-tarifas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 7rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .contenido-tarifas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0 2rem 12rem;
+    }
+}
 
 .contenedor-tarifa {
     text-align: center;
     width: 30rem;
     background-color: var(--gris);
     border-radius: 3rem;
-    margin: 2rem;
-}
-
-.contenedor-tarifa h3 {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 /* FOOTER */
@@ -127,15 +157,39 @@ h4 {
 
 .footer h3 {
     margin: 0;
+    text-align: center;
+}
+
+.footer h5 {
+    color: var(--blanco);
+    margin: 0;
 }
 
 .footer .navegacion {
-    padding-bottom: 13rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .footer p {
     color: var(--blanco);
     margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer p {
+        color: var(--blanco);
+        margin: 0;
+        text-align: start;
+    }
+
+    .footer .navegacion {
+        padding-bottom: 13rem;
+    }
+
+    .footer h3 {
+        text-align: start;
+    }
 }
 
 .imagen-footer {
