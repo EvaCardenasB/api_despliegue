@@ -105,6 +105,7 @@ h5 {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+        padding: 0 2rem;
     }
 
     .barra a {
@@ -152,7 +153,6 @@ h5 {
 /* FOOTER */
 .footer {
     background-color: var(--azul);
-    padding: 0 0 1rem 1rem;
 }
 
 .footer h3 {
