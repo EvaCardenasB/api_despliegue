@@ -1,0 +1,510 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --negro: #000000;
+    --gris: #aba8a8;
+    --letra: #17af66;
+    --fondo: #ffffff;
+    --rojo: #9f2207;
+}
+
+/* GLOBALES */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    height: 40rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p, a {
+    font-family: var(--fuenteParrafos);
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 145rem;
+}
+
+.centrar-texto {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--negro);
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header .navegacion {
+    padding-bottom: 1rem;
+}
+
+/* IMAGENES */
+@media (min-width: 768px) {
+    .imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }        
+}
+
+/* NAVEGACION */
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra a {
+    text-decoration: none;
+    color: var(--rojo);
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 2rem;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: var(--rojo);
+        margin: 0 1rem;
+    }
+}
+
+.navegacion {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        gap: 2rem;
+    }
+}
+
+/* TARIFAS */
+.contenido-tarifas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-tarifas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 7rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .contenido-tarifas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0 2rem 12rem;
+    }
+}
+
+.contenedor-tarifa {
+    text-align: center;
+    width: 30rem;
+    background-color: var(--gris);
+    border-radius: 3rem;
+    margin: 1rem 0;
+}
+
+.contenedor-tarifa h3 {
+    margin: 1rem;
+}
+/* FOOTER */
+.footer {
+    background-color: var(--negro);
+}
+
+.footer h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.footer h5 {
+    color: var(--rojo);
+    margin: 0;
+    padding: 2rem;
+}
+
+.footer .navegacion {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.footer p {
+    color: var(--rojo);
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer p {
+        color: var(--rojo);
+        margin: 0;
+        text-align: start;
+    }
+
+    .footer .navegacion {
+        padding-bottom: 14rem;
+    }
+
+    .footer h3 {
+        text-align: start;
+    }
+}
+
+/* TABLA HORARIOS */
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tabla {
+    background-color: var(--gris);
+    font-family: var(--fuenteParrafos);
+    margin: 2rem auto;
+}
+
+
+
+/*
+********************************************************
+Estilo Rafa
+********************************************************
+*/
+
+/*
+********************************************************
+******************LOGIN*********************************
+********************************************************
+*/
+
+.cuerpoPagLogin{
+    
+    background: var(--fondo);
+    background-size: cover;
+    height: 100vh;
+    
+    
+    
+    
+}
+
+
+.box_formLogin{
+    
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    background: linear-gradient(var(--negro),rgb(193, 8, 8));
+    border-radius: 15px;
+
+}
+
+.box_formLogin .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rojo);    
+    
+    
+}
+.box_formLogin .form1 input[type=text]{
+    width: 350px;
+    padding: 15px;
+    border-style: hidden;
+    background-color: white;
+    color: var(--negro);
+    
+}
+
+.box_formLogin .form2 input[type=text]{
+    margin-top: 5px;
+    width: 350px;
+    padding: 15px;
+    border-style: hidden;
+    background-color: white;    
+    color: var(--negro);
+    
+}
+
+.box_formLogin .form1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_formLogin .form2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.box_formLogin .botones_login{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.box_formLogin .botones_login input[type=submit]{
+    background: transparent;
+    background-color: #914a40;
+    border-radius: 6px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-transition-duration: 0,4s;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.box_formLogin .botones_login input[type=submit]:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.box_formLogin .botones_login button{
+    background: transparent;
+    background-color: #914a40;
+    border-radius: 6px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-transition-duration: 0,4s;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.box_formLogin .botones_login button:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+/*
+***********************************************************
+********************REGISTRO*******************************
+***********************************************************
+*/
+
+.cuerpoPagRegistro{
+    background: var(--fondo);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20rem;
+    
+    
+    
+
+}
+
+.box_formRegistro{
+    margin-top: -5rem;
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(var(--negro),rgb(193, 8, 8));
+    border-radius: 5rem;
+}
+
+.box_formRegistro .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rojo);    
+    
+    
+}
+
+
+.box_formRegistro .form input[type=text]{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    padding: 10px;
+    border-style: hidden;
+    background-color: white;    
+    color: var(--negro);
+    
+}
+
+.box_formRegistro .form input[type=date]{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-right: 100rem;
+    width: 200px;
+    padding: 10px;
+    border-style: hidden;
+    background-color: white;    
+    color: var(--negro);
+}
+
+.box_formRegistro .form select{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    padding: 10px;
+    border-style: hidden;
+    background-color: white;    
+    color: var(--negro);
+}
+
+
+
+.box_formRegistro .form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+.box_formRegistro .botones_login{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.box_formRegistro .botones_login input[type=submit]{
+    background: transparent;
+    background-color: #914a40;
+    border-radius: 6px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-transition-duration: 0,4s;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.box_formRegistro .botones_login input[type=submit]:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.box_formRegistro .botones_login button{
+    background: transparent;
+    background-color: #914a40;
+    border-radius: 6px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-transition-duration: 0,4s;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.box_formRegistro .botones_login button:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+/************************************************
+**********Cartelitos
+*************************************************
+*/
+
+.box_form2{
+    height: 500px;
+    width: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.box_form2 #intereses{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#intereses input + label{
+    background: url(../img/Peconomico.png) center no-repeat left;
+}
+#intereses input:checked + label{
+    background-image: url(../img/Peconomico_check.png) center no-repeat left;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
