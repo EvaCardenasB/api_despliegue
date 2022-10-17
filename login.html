@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Log In</title>
 </head>
 <body>
+
     <header class="header">
         <div class="contenedor">
             <div class="barra"> 
@@ -23,33 +25,25 @@
             </div>
         </div>
     </header>
-    <section class="cuerpoPagLogin">
-        
-    
-        <div class="box_formLogin">
-            <div class="texto">
+    <div class="mid_box">
+        <form action="" method="POST" id="form">
+            <div class="form">
                 <h1>Login</h1>
-            </div>
-            
-                <div class="form1">
-                    <input type="text" name="nombre_login" id="nombre_login" placeholder="Usuario">
-                    
-        
+                <div class="grupo">
+                    <input type="email" name="" id="email" placeholder="Cuenta">
                 </div>
-                <div class="form2">
-                    <input type="text" name="contra_login" id="contra_login" placeholder="Contraseña">
+                <div class="grupo">
+                    <input type="password" name="" id="password" placeholder="**********">
                 </div>
                 <div class="botones_login">
-                    <input type="submit" value="Entrar" >
-                    <button onclick="location.href='registro.html'">Inscribete</button>
-                    
-        
-                </div>
-            
-            
-        </div>
-    
-    </section>
+                    <button type="submit">Entrar</button>
+                    <button type="submit">Registro</button>
+                </div>               
+                
+                <p class="warnings" id="warnings"></p>
+            </div>
+        </form>
+    </div>
     <footer class="footer">
         <div class="contenedor">
             <div class="barra"> 
@@ -75,6 +69,8 @@
     </footer>
     
 
+<script src="js/app.js" >
 
+</script>
 </body>
 </html>

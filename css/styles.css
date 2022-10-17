@@ -235,83 +235,66 @@ Estilo Rafa
 ********************************************************
 */
 
-.cuerpoPagLogin{
-    
-    background: var(--fondo);
-    background-size: cover;
+/*Nuevooooooo*********/
+
+.mid_box{
+    background-color: var(--fondo);
     height: 100vh;
-    
-    
-    
-    
 }
 
-
-.box_formLogin{
-    
-    height: 400px;
+.mid_box .form{
+    height: auto;
     width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    margin: 0 auto;
+    transform: translate(-50%,-50%);  
     background: linear-gradient(var(--negro),rgb(193, 8, 8));
     border-radius: 15px;
-
 }
-
-.box_formLogin .texto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--rojo);    
-    
-    
-}
-.box_formLogin .form1 input[type=text]{
-    width: 350px;
-    padding: 15px;    
-    background-color: white;
-    color: var(--negro);
-    
-}
-
-.box_formLogin .form2 input[type=text]{
-    margin-top: 5px;
-    width: 350px;
-    padding: 15px;
-    background-color: white;    
-    color: var(--negro);
-    
-}
-
-.box_formLogin .form1{
-    display: flex;
-    align-items: center;
+.mid_box .form{
+    display:flex ;
     flex-direction: column;
-    justify-content: center;
-}
-
-.box_formLogin .form2{
-    display: flex;
     align-items: center;
-    flex-direction: column;
+}
+
+.mid_box .form h1{
+    color: var(--fondo);
+    display: flex;
     justify-content: center;
 }
 
+.mid_box .form .grupo input[type=email]{
+    width: 30rem;
+    padding: 14px;
+    background-color: transparent;
+    border: none;   
+    border-bottom: 2px solid var(--fondo);
+    color: white;
+    outline: none;
+}
 
+.mid_box .form .grupo input[type=password]{
+    width: 30rem;
+    padding: 14px;
+    background-color: transparent;
+    border: none;   
+    border-bottom: 2px solid var(--fondo);
+    color: white;
+    outline: none;
+}
 
-.box_formLogin .botones_login{
-    margin-top: 50px;
+.mid_box .form .botones_login{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    
+    width: 35rem;
+    padding-top: 5rem;
 }
 
-.box_formLogin .botones_login input[type=submit]{
+.mid_box .form button{
     background: transparent;
-    background-color: #914a40;
+    background-color: #eba197;
     border-radius: 6px;
     font-size: 20px;
     border-style: none;
@@ -321,27 +304,16 @@ Estilo Rafa
     padding: 20px;
 }
 
-.box_formLogin .botones_login input[type=submit]:hover{
+.mid_box .form button:hover{
     background-color: aliceblue;
     color: black;
 }
 
-.box_formLogin .botones_login button{
-    background: transparent;
-    background-color: #914a40;
-    border-radius: 6px;
-    font-size: 20px;
-    border-style: none;
-    -webkit-transition-duration: 0,4s;
-    transition-duration: 0.4s;
-    text-transform: uppercase;
-    padding: 20px;
+.warnings{
+    color: var(--fondo);
 }
 
-.box_formLogin .botones_login button:hover{
-    background-color: aliceblue;
-    color: #000000;
-}
+
 
 /*
 ***********************************************************
@@ -467,33 +439,7 @@ Estilo Rafa
     color: #000000;
 }
 
-/************************************************
-**********Cartelitos
-*************************************************
-*/
 
-.box_form2{
-    height: 500px;
-    width: 500px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.box_form2 #intereses{
-    display: flex;
-    flex-direction: column;
-
-}
-
-#intereses input + label{
-    background: url(../img/Peconomico.png) center no-repeat left;
-}
-#intereses input:checked + label{
-    background-image: url(../img/Peconomico_check.png) center no-repeat left;  
-}
 
 
 
