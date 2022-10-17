@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="barra"> 
+            <a href="/index.html">
+                <h3 class="header-titulo">Crossfit Quinto</h3>
+            </a>
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="centrar-texto">Registro</h1>
+        <form class="form" novalidate>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                <label for="postal">Código Postal</label>
+                <input type="number" name="postal" id="postal" placeholder="Cod Postal">
+                <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono" id="telefono" placeholder="Num telefono">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo" placeholder="Correo">
+                <label for="">DNI</label>
+                <input type="text" name="dni" id="dni" placeholder="Dni">
+                <label for="fechaNac">Fecha de nacimiento</label>
+                <input type="date" name="fechaNac" id="fechaNac">
+                <div class="radio">
+                    <label>Sexo:</label>
+                    <label for="sexo">Hombre</label>
+                    <input type="radio" name="sexo" id="sexo">
+                    <label for="sexo">Mujer</label>
+                    <input type="radio" name="sexo" id="sexo">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Bancaria</legend>
+                <label for="cuenta">Cuenta Bancaria</label>
+                <input type="text" name="cuenta" id="cuenta" placeholder="Cuenta bancaria" value="ES">
+                <label for="banco">Nombre Banco</label>
+                <input type="text" name="banco" id="banco" placeholder="Nombre Banco">
+            </fieldset>
+
+            <fieldset class="radio">
+                <legend>Cuota mensual</legend>
+                <label for="cuota">Ilimitada 70 €</label>
+                <input type="radio" name="cuota" id="cuota">
+                <label for="cuota">4 dias/semana 60 €</label>
+                <input type="radio" name="cuota" id="cuota">
+                <label for="cuota">3 dias/semana 55 €</label>
+                <input type="radio" name="cuota" id="cuota">
+                <label for="cuota">2 dias/semana 50 €</label>
+                <input type="radio" name="cuota" id="cuota">
+            </fieldset>
+            <input type="submit" value="Registrarse" class="boton" onclick="validarRegistro()">
+        </form>
+    </main>      
+
+    <footer class="footer">
+        <div class="barra"> 
+            <div class="direccion">
+                <a href="/index.html">
+                    <h3 class="footer-titulo">Crossfit Quinto</h3>
+                </a>
+                <p>Calle Via Apia 54, Montequinto</p>
+                <p>Teléfono: 955679302 / 673467210</p>
+                <p>Lunes a Viernes de 07:00-22:00</p>
+                <p>Sábados y Domingos de 09:30-14:30</p>
+            </div>
+
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <h5 class="centrar-texto">Todos los derechos reservados. Crossfit Quinto®</h5>
+    </footer>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>

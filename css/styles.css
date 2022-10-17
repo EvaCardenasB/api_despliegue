@@ -2,9 +2,9 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --negro: #000000;
-    --gris: #aba8a8;
-    --letra: #17af66;
-    --fondo: #103b41;
+    --gris: #ded6d6;
+    --verde: #09ff00;
+    --blanco: #ffffff;
     --rojo: #9f2207;
 }
 
@@ -21,6 +21,7 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.8;
+    margin: 0;
 }
 
 img {
@@ -53,12 +54,12 @@ h5 {
     font-size: 2rem;
 }
 
-p, a {
+p, a, label {
     font-family: var(--fuenteParrafos);
 }
 
 .contenedor {
-    width: 100%;
+    width: 95%;
     max-width: 145rem;
 }
 
@@ -164,6 +165,7 @@ p, a {
 .contenedor-tarifa h3 {
     margin: 1rem;
 }
+
 /* FOOTER */
 .footer {
     background-color: var(--negro);
@@ -199,7 +201,7 @@ p, a {
     }
 
     .footer .navegacion {
-        padding-bottom: 14rem;
+        padding-bottom: 16rem;
     }
 
     .footer h3 {
@@ -218,3 +220,90 @@ td {
     font-family: var(--fuenteParrafos);
     margin: 2rem auto;
 }
+
+/* FORMULARIO */
+
+.form {
+    background-color: var(--blanco);
+    padding: 0 15rem 5rem;
+}
+
+.form p {
+    font-size: 1.4rem;
+    color: var(--negro);
+    margin: 2rem 0 0 0;
+}
+
+.form legend {
+    font-size: 2rem;
+    color: var(--negro);
+}
+
+.form label {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+.form input:not([type="submit"]),
+.form textarea,
+.form select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea {
+    height: 20rem;
+}
+
+.form fieldset {
+    margin-bottom: 2rem;
+}
+
+.form input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: var(--negro);
+    color: var(--rojo);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.alerta {
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.alerta.error {
+    background-color: rgb(208, 18, 18);
+    color: var(--blanco);
+}
+
+.alerta.correcto {
+    background-color: rgb(34, 252, 0);
+    color: var(--blanco);
+} 
