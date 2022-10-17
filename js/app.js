@@ -17,66 +17,83 @@ function validarRegistro() {
 
         if(nombre == '') {
             mostrarMensaje('El nombre es obligatorio', true)
+            document.getElementById('nombre').style.borderColor = 'red'
         }
 
         if(apellidos == '') {
             mostrarMensaje('El apellido es obligatorio', true)
+            document.getElementById('apellidos').style.borderColor = 'red'
         }
 
         if(direccion == '') {
             mostrarMensaje('La dirección es obligatorio', true)
+            document.getElementById('direccion').style.borderColor = 'red'
         }
 
         if(postal == '') {
             mostrarMensaje('El código postal es obligatorio', true)
+            document.getElementById('postal').style.borderColor = 'red'
         } else if(postal.length !== 5) {
             mostrarMensaje('El código postal debe tener 5 caracteres', true)
+            document.getElementById('postal').style.borderColor = 'red'
         }
 
         if(telefono == '') {
             mostrarMensaje('El teléfono es obligatorio', true)
+            document.getElementById('telefono').style.borderColor = 'red'
         } else if(telefono.length !== 9) {
             mostrarMensaje('El teléfono debe tener 9 caracteres', true)
+            document.getElementById('telefono').style.borderColor = 'red'
         }
 
         if(correo == '') {
             mostrarMensaje('El email es obligatorio', true)
+            document.getElementById('correo').style.borderColor = 'red'
         } else if(!validarEmail(correo)) {
             mostrarMensaje('El email no es valido', true)
+            document.getElementById('correo').style.borderColor = 'red'
         }
 
         if(dni == '') {
             mostrarMensaje('El dni es obligatorio', true)
+            document.getElementById('dni').style.borderColor = 'red'
         } else if(dni.length !== 9) {
             mostrarMensaje('El dni debe tener 9 caracteres', true)
+            document.getElementById('dni').style.borderColor = 'red'
         } else if(!validarDni(dni)) {
             mostrarMensaje('Introduzca un DNI válido', true)
+            document.getElementById('dni').style.borderColor = 'red'
         }
 
         if(fechaNac == '') {
             mostrarMensaje('La fecha nacimiento es obligatoria', true)
+            document.getElementById('fechaNac').style.borderColor = 'red'
         } else if(calcularEdad(fechaNac) < 15) {
             mostrarMensaje('La edad mínima son 15 años', true)
+            document.getElementById('fechaNac').style.borderColor = 'red'
         }
-        //Solo coge el primer checked
-        console.log(sexo)
+
         if(!sexo) {
             mostrarMensaje('No ha seleccionado ningún sexo', true)
+            document.getElementById('sexo').style.borderColor = 'red'
         }
 
         if(cuenta == '') {
             mostrarMensaje('La cuenta es obligatorio', true)
+            document.getElementById('cuenta').style.borderColor = 'red'
         } else if(cuenta.length !== 24) {
             mostrarMensaje('La cuenta debe tener 20 caracteres', true)
+            document.getElementById('cuenta').style.borderColor = 'red'
         }
 
         if(banco == '') {
             mostrarMensaje('El nombre del banco es obligatorio', true)
+            document.getElementById('banco').style.borderColor = 'red'
         }
-        //Solo coge el primer checked
-        console.log(cuota)
+
         if(!cuota) {
             mostrarMensaje('No ha seleccionado ninguna cuota', true)
+            document.getElementById('cuota').style.input = 'red'
         }
 
         if(nombre != '' && apellidos != '' && direccion != '' && postal != '' && telefono != '' && correo != '' && dni != '' && fechaNac != '' && sexo && cuenta != '' && banco != '' && cuota) {
