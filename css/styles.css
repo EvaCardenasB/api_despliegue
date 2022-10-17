@@ -271,8 +271,7 @@ Estilo Rafa
 }
 .box_formLogin .form1 input[type=text]{
     width: 350px;
-    padding: 15px;
-    border-style: hidden;
+    padding: 15px;    
     background-color: white;
     color: var(--negro);
     
@@ -282,7 +281,6 @@ Estilo Rafa
     margin-top: 5px;
     width: 350px;
     padding: 15px;
-    border-style: hidden;
     background-color: white;    
     color: var(--negro);
     
