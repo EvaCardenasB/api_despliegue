@@ -143,9 +143,9 @@ function validarRegistro() {
         }
 
         if (nombre != '' && apellidos != '' && direccion != '' && postal != '' && telefono != '' && correo != '' && dni != '' && fechaNac != '' && sexo && cuenta != '' && banco != '' && cuota) {
-            mostrarMensaje('El mensaje se ha enviado con exito')
+            mostrarMensaje('El registro se ha completado con exito')
         }
-    });
+    })
 
     function mostrarMensaje(mensaje, error = null) {
         let alerta = document.createElement('P')
