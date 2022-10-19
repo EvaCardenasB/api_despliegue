@@ -1,3 +1,4 @@
+/* PABLO */
 :root {
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
@@ -220,112 +221,6 @@ td {
     margin: 2rem auto;
 }
 
-
-
-/*
-********************************************************
-Estilo Rafa
-********************************************************
-*/
-
-/*
-********************************************************
-******************LOGIN*********************************
-********************************************************
-*/
-
-/*Nuevooooooo*********/
-
-
-.mid_box{
-    background-color: var(--fondo);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -15rem;
-
-
-}
-
-
-.mid_box .form{
-    
-    height: 600px;
-    width: 600px;
-    background: linear-gradient(var(--negro),rgb(193, 8, 8));
-    border-radius: 15px;
-    
-}
-.mid_box .form{
-    display:flex ;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center ;
-}
-
-
-.mid_box .form .grupo input[type=email]{
-    margin-top: 5rem ;
-    width: 35rem;
-    padding: 20px;
-    background-color: transparent;
-    border: none;   
-    border-bottom: 2px solid var(--fondo);
-    color: white;
-    outline: none;
-    font-size: 2rem;
-}
-
-.mid_box .form .grupo input[type=password]{
-    width: 35rem;
-    padding: 20px;
-    background-color: transparent;
-    border: none;   
-    border-bottom: 2px solid var(--fondo);
-    color: white;
-    outline: none;
-    font-size: 2rem;
-}
-
-.mid_box .form .botones_login{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 35rem;
-    margin-top: 15rem;
-    
-}
-
-.mid_box .form .botonera{
-    background: transparent;
-    background-color: #eba197;
-    border-radius: 6px;
-    font-size: 20px;
-    border-style: none;
-    -webkit-transition-duration: 0,4s;
-    transition-duration: 0.4s;
-    text-transform: uppercase;
-    padding: 25px;
-}
-
-.mid_box .form .botonera:hover{
-    background-color: aliceblue;
-    color: black;
-}
-
-.mid_box .form #enlace_Login{
-    text-decoration: none;
-    color: var(--negro);
-}
-
-.avisos_login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-}
 /* FORMULARIO */
 
 .form {
@@ -412,3 +307,94 @@ Estilo Rafa
     background-color: rgb(34, 252, 0);
     color: var(--blanco);
 } 
+
+
+
+
+/* RAFAEL */
+.mid_box{
+    background-color: var(--fondo);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mid_box .form{
+    
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(var(--negro),rgb(193, 8, 8));
+    border-radius: 15px;
+    
+}
+.mid_box .form{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+
+
+.mid_box .form .grupo input[type=email]{
+    margin-top: 5rem ;
+    width: 35rem;
+    padding: 20px;
+    background-color: transparent;
+    border: none;   
+    border-bottom: 2px solid var(--fondo);
+    color: white;
+    outline: none;
+    font-size: 2rem;
+}
+
+.mid_box .form .grupo input[type=password]{
+    width: 35rem;
+    padding: 20px;
+    background-color: transparent;
+    border: none;   
+    border-bottom: 2px solid var(--fondo);
+    color: white;
+    outline: none;
+    font-size: 2rem;
+}
+
+.mid_box .form .botones_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35rem;
+    margin-top: 15rem;
+    
+}
+
+.mid_box .form .botonera{
+    background: transparent;
+    background-color: #eba197;
+    border-radius: 6px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-transition-duration: 0,4s;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.mid_box .form .botonera:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.mid_box .form #enlace_Login{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.avisos_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}

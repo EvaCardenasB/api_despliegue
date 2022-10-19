@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Log In</title>
 </head>
 <body>
 
     <header class="header">
-        <div class="contenedor">
             <div class="barra"> 
                 <a href="/index.html">
                     <h3 class="header-titulo">Crossfit Quinto</h3>
@@ -23,35 +22,27 @@
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div>
-        </div>
     </header>
-    <h1 class="centrar-texto">Login</h1>
+    <main>
+        <h1 class="centrar-texto">Login</h1>
 
-    <div class="mid_box">
-        <form action="" method="POST" id="form">
-
-            <div class="form">
-                
-                <div class="grupo">
-                    <input type="email" name="" id="email" placeholder="Cuenta">
-                </div>
-                <div class="grupo">
-                    <input type="password" name="" id="password" placeholder="**********">
-                </div>
-                            
-                <div class="botones_login">
-                    <button type="submit" onclick="validarLogin()" class="botonera">Entrar</button>
-                    <a href="registro.html" class="botonera" id="enlace_Login">registro</a>
-                </div>      
-                
-            </div>
-            
-        </form>
-        
-            
-    </div>
+        <div class="mid_box">
+            <form class="form" action="" method="POST" id="form">
+                    <div class="grupo">
+                        <input type="email" name="" id="email" placeholder="Cuenta">
+                    </div>
+                    <div class="grupo">
+                        <input type="password" name="" id="password" placeholder="**********">
+                    </div>
+                                
+                    <div class="botones_login">
+                        <button type="submit" onclick="validarLogin()" class="botonera">Entrar</button>
+                        <a href="registro.html" class="botonera" id="enlace_Login">registro</a>
+                    </div>     
+            </form>
+        </div>
+    </main>
     <footer class="footer">
-        <div class="contenedor">
             <div class="barra"> 
                 <div class="direccion">
                     <a href="/index.html">
