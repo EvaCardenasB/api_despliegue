@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="barra"> 
+            <a href="/index.html">
+                <h3 class="header-titulo">Crossfit Quinto</h3>
+            </a>
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="form_title centrar-texto">Contáctanos</h2>
+
+        <form id="form_contact" class="form_contact">
+            <div class="form_container">
+                <input type="text" class="form_input" placeholder="Nombre" id="nombre">
+                <input type="text" class="form_input" placeholder="Apellidos" id="apellidos">
+                
+                <select name="myselect_contact" id="myselect_contact" required onchange="mostrarOption()">
+                <option value="none" id="none" selected>--Elige una opción--</option>
+                <option value="telefono" id="telefono">Teléfono</option>
+                <option value="email" id="email">Correo electronico</option>
+                </select>
+            
+                <input type="text" class="form_input display_option" id="id_email" placeholder="ejemplo@gmail.com">
+                <input type="tel" class="form_input display_option" id="id_telefono" placeholder="123-456-789">
+                <textarea class="form_input" id="area_contact" placeholder="Mensaje"></textarea>
+                <label for=""> He leído y acepto los términos y condiciones </label>
+                <input type="radio" name="check" id="check">
+                <input type="submit" value="Enviar" class="button" onclick="validarContacto()">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="barra"> 
+            <div class="direccion">
+                <a href="/index.html">
+                    <h3 class="footer-titulo">Crossfit Quinto</h3>
+                </a>
+                <p>Calle Via Apia 54, Montequinto</p>
+                <p>Teléfono: 955679302 / 673467210</p>
+                <p>Lunes a Viernes de 07:00-22:00</p>
+                <p>Sábados y Domingos de 09:30-14:30</p>
+            </div>
+            
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <h5 class="centrar-texto">Todos los derechos reservados. Crossfit Quinto®</h5>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
