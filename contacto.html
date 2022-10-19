@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesContact.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="barra"> 
+            <a href="/index.html">
+                <h3 class="header-titulo">Crossfit Quinto</h3>
+            </a>
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    </header>
+
+    <main>
+        <form method="POST" id="form_contact" action="" class="form_contact">
+            <div class="form_container">
+                <h2 class="form_title">Contáctanos</h2>
+                <input type="text" class="form_input" placeholder="Nombre" id="nombre" required>
+                <input type="text" class="form_input" placeholder="Apellidos" id="apellidos" required>
+                
+                <select name="myselect_contact" id="myselect_contact" required onchange="mostrarOption()">
+                <option value="none" id="none" selected>--Elige una opción--</option>
+                <option value="telefono" id="telefono">Teléfono</option>
+                <option value="email" id="email">Correo electronico</option>
+                </select>
+            
+                <input type="text" class="form_input display_option" id="id_email" placeholder="ejemplo@gmail.com">
+                <input type="tel" class="form_input display_option" id="id_telefono" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                <textarea class="form_input" id="area_contact" placeholder="Mensaje"></textarea>
+                <input type="checkbox" id="check"><label for=""> He leído y acepto <a href="javascript:MostrarTerminos()" >los términos y condiciones</a></label><p></p>
+                <button type="submit" value="Enviar" class="button" >Enviar</button>
+                <p class="warnings_contact" id="warnings_contact"></p>
+           
+                <div class="terminos_condiciones">
+                    <textarea name="" id="terminos" cols="25" rows="15" >Aviso legal y condiciones generales de uso.
+El aviso legal y las condiciones generales de uso, o términos y condiciones de uso, está pensado para todos aquellos que van a crear una página o sitio web. Este documento está adaptado al Reglamento Europeo de Protección de Datos (RGPD) y a la reciente Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.Este documento contiene, de forma general, un conjunto de menciones o referencias legales que servirán para regular las condiciones en las que los usuarios de Internet acceden, navegan y utilizan el sitio o página web. También comprende los derechos, obligaciones y responsabilidades a los que las partes quedan sometidas recíprocamente durante el acceso, navegación y uso del sitio web.                   La inclusión de un aviso legal y condiciones generales de uso aporta un gran nivel de confianza y seguridad jurídica a todos y cada uno de los sitios web presentes en Internet.También existe otro conjunto de menciones legales —condiciones generales de venta— que, a veces, se presentan de forma conjunta con el aviso legal y las condiciones generales de uso, pero no deben confundirse el uno con el otro, pues su contenido difiere. Así, mientras el aviso legal regula las condiciones en las que los usuarios de Internet acceden navegan y utilizan el sitio web, las condiciones generales de venta regulan las condiciones en las que se realizan los pedidos o solicitudes de compra en el sitio web, y establecen los derechos, obligaciones y responsabilidades que corresponden a cada parte de dicha compraventa.Por otra parte, si solo se desea elaborar un documento que contenga las normas acerca de cómo se recogen y gestionan los datos personales de los usuarios de una página o sitio web, así como acerca de las cookies utilizadas por el mismo, se utiliza la política de privacidad de un sitio web.
+    </textarea>
+                </div>
+           
+           
+            </div>
+            
+            
+        </form>
+    </main>
+    <script src="js/validacionesContact.js"></script>
+    <script src="js/scriptsContact.js"></script>
+    <footer class="footer">
+        <div class="barra"> 
+            <div class="direccion">
+                <a href="/index.html">
+                    <h3 class="footer-titulo">Crossfit Quinto</h3>
+                </a>
+                <p>Calle Via Apia 54, Montequinto</p>
+                <p>Teléfono: 955679302 / 673467210</p>
+                <p>Lunes a Viernes de 07:00-22:00</p>
+                <p>Sábados y Domingos de 09:30-14:30</p>
+            </div>
+            
+            <nav class="navegacion">
+                <a href="horarios.html">Horarios</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Inscribete</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <h5 class="centrar-texto">Todos los derechos reservados. Crossfit Quinto®</h5>
+    </footer>
+</body>
+</html>
