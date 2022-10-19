@@ -237,6 +237,7 @@ Estilo Rafa
 
 /*Nuevooooooo*********/
 
+
 .mid_box{
     background-color: var(--fondo);
     height: 100vh;
@@ -244,44 +245,49 @@ Estilo Rafa
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: -15rem;
+
+
 }
 
+
 .mid_box .form{
-    height: auto;
-    width: 400px;
+    
+    height: 600px;
+    width: 600px;
     background: linear-gradient(var(--negro),rgb(193, 8, 8));
     border-radius: 15px;
+    
 }
 .mid_box .form{
     display:flex ;
     flex-direction: column;
     align-items: center;
+    justify-content: center ;
 }
 
-.mid_box .form h1{
-    color: var(--fondo);
-    display: flex;
-    justify-content: center;
-}
 
 .mid_box .form .grupo input[type=email]{
-    width: 30rem;
-    padding: 14px;
+    margin-top: 5rem ;
+    width: 35rem;
+    padding: 20px;
     background-color: transparent;
     border: none;   
     border-bottom: 2px solid var(--fondo);
     color: white;
     outline: none;
+    font-size: 2rem;
 }
 
 .mid_box .form .grupo input[type=password]{
-    width: 30rem;
-    padding: 14px;
+    width: 35rem;
+    padding: 20px;
     background-color: transparent;
     border: none;   
     border-bottom: 2px solid var(--fondo);
     color: white;
     outline: none;
+    font-size: 2rem;
 }
 
 .mid_box .form .botones_login{
@@ -289,11 +295,11 @@ Estilo Rafa
     flex-direction: row;
     justify-content: space-around;
     width: 35rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    margin-top: 15rem;
+    
 }
 
-.mid_box .form button{
+.mid_box .form .botonera{
     background: transparent;
     background-color: #eba197;
     border-radius: 6px;
@@ -302,12 +308,17 @@ Estilo Rafa
     -webkit-transition-duration: 0,4s;
     transition-duration: 0.4s;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 25px;
 }
 
-.mid_box .form button:hover{
+.mid_box .form .botonera:hover{
     background-color: aliceblue;
     color: black;
+}
+
+.mid_box .form #enlace_Login{
+    text-decoration: none;
+    color: var(--negro);
 }
 
 .avisos_login{
@@ -316,13 +327,22 @@ Estilo Rafa
     justify-content: center;
     width: 400px;
 }
-
-.warnings{
-    background: linear-gradient(rgb(212, 168, 168),rgb(193, 8, 8));
-    padding: 5px 5px 5px 5px;
-    border-radius: 6px;
-    color: var(--negro);
+.alerta {
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem 0;
 }
+
+.alerta.error {
+    background-color: rgb(208, 18, 18);
+    color: var(--blanco);
+}
+
+
+
+
 
 
 

@@ -2,42 +2,47 @@ function validarLogin(){
     const email = document.getElementById('email');
     const pass = document.getElementById('password');
     const form = document.getElementById('form');
-    const parrafo = document.getElementById('warnings');
+    
 
     form.addEventListener("submit", e =>{
         e.preventDefault()
-        let warnings = ""
+        
         let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-        let entrar= false
-        let nIntentos = 0
-        parrafo.innerHTML = ""
+        
+        
         
         if(!regexEmail.test(email.value)){
 
-            warnings += 'El email no es valido <br>'
-            entrar = true
+            mostrarMensaje('El email no es valido' ,  true)
+            document.getElementById('email').style.borderColor = 'red'
 
         }
 
         if(pass.value.length < 4){
         
-            warnings += 'La contraseña no es valida <br>'
-            entrar = true
-
+            mostrarMensaje('La contraseña no es valida' , true)
+            document.getElementById('password').style.borderColor = 'red'
         }
-
-        
-
-        if(entrar){
-            parrafo.innerHTML = warnings
-        }else{
-            parrafo.innerHTML = "enviado"
-        }
-
-        
 
 
     })
+
+    function mostrarMensaje(mensaje, error = null) {
+        let alerta = document.createElement('P')
+        alerta.textContent = mensaje
+
+        if(error) {
+            alerta.classList.add('alerta','error')
+        } else {
+            alerta.classList.add('alerta','correcto')
+        }      
+
+        form.appendChild(alerta)
+
+        setTimeout(() => {
+            alerta.remove()
+        }, 5000)
+    }
 
 }
 
